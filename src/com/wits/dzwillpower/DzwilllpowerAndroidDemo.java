@@ -15,7 +15,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-
+/**
+ * 启动的activity
+ * @author wh1107007 @Time   2013-2-5下午2:58:38
+ */
 public class DzwilllpowerAndroidDemo extends ListActivity {
 	/** Called when the activity is first created. */
 	@Override
