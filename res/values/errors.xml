@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_requestInfo">
+		&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;
+		&lt;info xmlns=\"reserved\" version=\"1.0\"&gt;
+			&lt;header&gt;
+				&lt;type&gt;Response&lt;/type&gt;
+				&lt;msgType&gt;Error&lt;/msgType&gt;
+				&lt;date&gt;%1$s&lt;/date&gt;
+				&lt;msgVersion&gt;%2$s&lt;/msgVersion&gt;
+			&lt;/header&gt;
+			&lt;body&gt;
+				&lt;error&gt;
+					&lt;code&gt;%3$s&lt;/code&gt;
+					&lt;description&gt;%4$s&lt;/description&gt;
+					&lt;source&gt;%5$s&lt;/source&gt;
+				&lt;/error&gt;
+			&lt;/body&gt;
+		&lt;/info&gt;
+    </string>
+    <string name="error_connectionServer_code">
+    	101
+    </string>
+    <string name="error_wiworks_internal_error_code">
+    	901
+    </string>
+    <string name="error_connectionServer_description">
+    	與伺服器連接失敗
+    </string>
+    <string name="error_source_lms">
+    	1
+    </string>
+    <string name="error_source_wiwork">
+    	2
+    </string>
+    
+    <string name="error_parseXml">
+    	解析XML失敗
+    </string>
+    <string name="error_md5_not_match">
+    	MD5匹配失敗
+    </string>
+    <string name="error_file_not_found_description">
+    	上傳文檔不存在
+    </string>
+</resources>

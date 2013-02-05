@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:textColor="#FCFCFC"
+            android:textSize="11pt" />
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="fill_parent"
+            android:layout_height="300dip"
+            android:cacheColorHint="#00000000" >
+        </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="53dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_selectall"
+            android:layout_width="80dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="20dip"
+            android:gravity="center"
+            android:text="全选" />
+
+        <Button
+            android:id="@+id/bt_cancelselectall"
+            android:layout_width="80dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="118dip"
+            android:gravity="center"
+            android:text="反选" />
+
+        <Button
+            android:id="@+id/bt_deselectall"
+            android:layout_width="80dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="213dip"
+            android:gravity="center"
+            android:text="取消已选" />
+    </RelativeLayout>
+    
+
+</LinearLayout>

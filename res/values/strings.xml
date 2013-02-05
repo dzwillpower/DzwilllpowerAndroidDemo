@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DzwilllpowerAndroidDemo!</string>
+    <string name="app_name">DzwilllpowerAndroidDemo</string>
+    <string name="btn_listview">listview 全选 </string>
+    <string name="btn_listview_paging">listview分页加载</string>
+    <string name="btn_listview_onscroll">listview 滚屏</string>
+    <string name="btn_listview_onscrolli">listview显示首字母</string>
+    <string name="animation01">Android 动画/Ex_Animation01</string>
+    <string name="animation02">Android 动画/Ex_Animation02</string>
+    <string name="Ex_checkboxActivity">Android 控件的使用/listview和checkbox全选</string>
+    <string name="Ex_checkboxActivity01">Android 控件的使用/listview和checkbox全选2</string>
+    <string name="Ex_ListViewOncrollListenerI">Android 控件的使用/listview滚动监听</string>
+    <string name="Ex_ListViewOnScrollListener">Android 控件的使用/listview滚动监听2</string>
+    <string name="Ex_ListViewPagingLoading">Android 控件的使用/lsitview动态加载</string>
+    <string name="TestReturnXMl">Android 一般练习/测试返回的xml值</string>
+    <string name="AndroidPraticeActivity">Android 一般练习/listview 的使用</string>
+    <string name="TestHandler">Android Handler/Handler 更新UI</string>
+     <string name="TestHandler2">Android Handler/利用handler.post()更新UI</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_listview" />
+
+        <Button
+            android:id="@+id/btn_listview_paging"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_listview_paging" />
+
+        <Button
+            android:id="@+id/btn_listview_onscroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_listview_onscroll" />
+
+        <Button
+            android:id="@+id/btn_listview_onscrolli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_listview_onscrolli" />
+    </LinearLayout>
+
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="animation" />
+        <Button
+            android:id="@+id/btn_animation02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="animation01" />
+        <Button
+            android:id="@+id/btn_listviewcheck01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="listviewcheck01" />
+    </LinearLayout>
+
+</LinearLayout>
