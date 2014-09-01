@@ -1,19 +1,19 @@
 package com.wits.dzwillpower.widget;
-import com.wits.dzwillpower.R;
+import android.app.ListActivity;
+import android.content.Context;
+import android.graphics.PixelFormat;
+import android.os.Bundle;
+import android.os.Handler;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup.LayoutParams;
+import android.view.WindowManager;
+import android.widget.AbsListView;
+import android.widget.AbsListView.OnScrollListener;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
 
-import android.app.ListActivity;  
-import android.content.Context;  
-import android.graphics.PixelFormat;  
-import android.os.Bundle;  
-import android.os.Handler;  
-import android.view.LayoutInflater;  
-import android.view.View;  
-import android.view.WindowManager;  
-import android.view.ViewGroup.LayoutParams;  
-import android.widget.AbsListView;  
-import android.widget.AbsListView.OnScrollListener;  
-import android.widget.ArrayAdapter;  
-import android.widget.TextView;  
+import com.wits.dzwillpower.android.R;
 /**
  * 
  * @author wh1107007 董治

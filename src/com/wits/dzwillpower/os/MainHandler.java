@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
-import com.wits.dzwillpower.R;
+import com.wits.dzwillpower.android.R;
 /**
  * 
  * @author wh1107007

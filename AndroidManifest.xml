@@ -1,111 +1,263 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wits.dzwillpower"
+    package="com.wits.dzwillpower.android"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk android:minSdkVersion="8" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
-      <activity
-            android:name=".DzwilllpowerAndroidDemo"
+        <activity
+            android:name="com.wits.dzwillpower.android.DzwilllpowerAndroidDemo"
             android:label="@string/app_name" >
             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.animation.Ex_Animation01"
+            android:label="@string/animation01" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.animation.Ex_Animation02"
+            android:label="@string/animation02" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.widget.Ex_checkboxActivity"
+            android:label="@string/Ex_checkboxActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.widget.Ex_checkboxActivity01"
+            android:label="@string/Ex_checkboxActivity01" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.widget.Ex_ListViewOncrollListenerI"
+            android:label="@string/Ex_ListViewOncrollListenerI" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.widget.Ex_ListViewOnScrollListener"
+            android:label="@string/Ex_ListViewOnScrollListener" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.widget.Ex_ListViewPagingLoading"
+            android:label="@string/Ex_ListViewPagingLoading" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.common.TestReturnXMl"
+            android:label="@string/TestReturnXMl" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.common.AndroidPraticeActivity"
+            android:label="@string/AndroidPraticeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.home.TestHandler"
+            android:label="@string/TestHandler" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.home.TestHandler2"
+            android:label="@string/TestHandler2" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+
+        <!--
+        <activity android:name=".widget.ImageView_demo" >
+				 <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                  <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+		</activity>
+        -->
+        <activity
+            android:name="com.wits.dzwillpower.android.content.IntentActivity01"
+            android:label="@string/testintent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
         </activity>
-        <activity android:name=".animation.Ex_Animation01" android:label="@string/animation01">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="com.wits.dzwillpower.practice" />
-			</intent-filter>
-		</activity>
-		
-         <activity android:name=".animation.Ex_Animation02" android:label="@string/animation02">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="com.wits.dzwillpower.practice" />
-			</intent-filter>
-		</activity>
-		<activity android:name=".widget.Ex_checkboxActivity" android:label="@string/Ex_checkboxActivity">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="com.wits.dzwillpower.practice" />
-			</intent-filter>
-		</activity>
-		<activity android:name=".widget.Ex_checkboxActivity01" android:label="@string/Ex_checkboxActivity01">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="com.wits.dzwillpower.practice" />
-			</intent-filter>
-		</activity>
-		
-		<activity android:name=".widget.Ex_ListViewOncrollListenerI" android:label="@string/Ex_ListViewOncrollListenerI">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="com.wits.dzwillpower.practice" />
-			</intent-filter>
-		</activity>
-		
-		<activity android:name=".widget.Ex_ListViewOnScrollListener" android:label="@string/Ex_ListViewOnScrollListener">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="com.wits.dzwillpower.practice" />
-			</intent-filter>
-		</activity>
-		
-		<activity android:name=".widget.Ex_ListViewPagingLoading" android:label="@string/Ex_ListViewPagingLoading">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="com.wits.dzwillpower.practice" />
-			</intent-filter>
-		</activity>
-		
-		<activity android:name=".common.TestReturnXMl" android:label="@string/TestReturnXMl">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="com.wits.dzwillpower.practice" />
-			</intent-filter>
-		</activity>
-		
-		<activity android:name=".common.AndroidPraticeActivity" android:label="@string/AndroidPraticeActivity">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="com.wits.dzwillpower.practice" />
-			</intent-filter>
-		</activity>
-		
-		<activity android:name=".home.TestHandler" android:label="@string/TestHandler">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="com.wits.dzwillpower.practice" />
-			</intent-filter>
-		</activity>
-		
-		<activity android:name=".home.TestHandler2" android:label="@string/TestHandler2">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="com.wits.dzwillpower.practice" />
-			</intent-filter>
-		</activity>
-		<activity android:name=".os.MainHandler" android:label="MainHandler" >
-		     <intent-filter>
-               <action android:name="android.intent.action.MAIN" />
-				<category android:name="com.wits.dzwillpower.practice" />
+        <activity android:name="com.wits.dzwillpower.android.content.IntentActivity02" >
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+
+                <data android:mimeType="vnd.android.cursor.dir/video1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-		</activity>
-		
-		<activity android:name=".widget.ProgressBarStu" android:label="@string/progressbar" >
-		    <intent-filter>
-               <action android:name="android.intent.action.MAIN" />
-				<category android:name="com.wits.dzwillpower.practice" />
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.test.MainActivity"
+            android:label="@string/temptest" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
             </intent-filter>
-		</activity>
-		
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.os.AsyncTaskExample"
+            android:label="@string/asynctaskexample" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.os.HandlerTest"
+            android:label="@string/handlertest" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.widget.ListViewSample"
+            android:label="@string/listviewsample" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.wits.dzwillpower.android.test.ReflectionImage"
+            android:label="@string/reflectionimage" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.widget.SeekBarExample"
+            android:label="@string/seekbarsample" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity android:name ="com.wits.dzwillpower.android.test.SharedImageFetcherExample"
+            android:label="@string/sharedimagefetcherexample">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+            
+        </activity>
+         <activity android:name ="com.wits.dzwillpower.android.view.OnFocusChangeExample"
+            android:label="@string/onfocuschangeexample">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wits.dzwillpower.android.test.TestActivity" 
+            android:label="@string/testdemo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wits.dzwillpower.android.test.FilmViewActivity"
+            android:label="@string/filmviewtest">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wits.dzwillpower.android.xmlparse.DomXmlParseActivity"
+             android:label="@string/xmlparse">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wits.dzwillpower.android.test.MergeAdapterDemo"
+             android:label="@string/mergeadapterdemo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

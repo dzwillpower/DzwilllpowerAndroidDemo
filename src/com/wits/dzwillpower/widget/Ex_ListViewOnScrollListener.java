@@ -1,7 +1,5 @@
 package com.wits.dzwillpower.widget;
 
-import com.wits.dzwillpower.R;
-
 import android.app.ListActivity;
 import android.content.Context;
 import android.os.Bundle;
@@ -12,6 +10,8 @@ import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.wits.dzwillpower.android.R;
 /**
  * 
  * @author wh1107007 董治

@@ -5,9 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.wits.dzwillpower.R;
-
-
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
@@ -18,6 +15,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.wits.dzwillpower.android.R;
 
 public class AndroidPraticeActivity extends Activity {
 	private ListView lv;

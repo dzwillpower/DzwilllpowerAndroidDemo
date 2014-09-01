@@ -2,8 +2,6 @@ package com.wits.dzwillpower.widget;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.wits.dzwillpower.R;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.CheckBox;
 import android.widget.TextView;
+
+import com.wits.dzwillpower.android.R;
 
 public class MyAdapter extends BaseAdapter{
     // 填充数据的list

@@ -3,8 +3,6 @@ package com.wits.dzwillpower.widget;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.wits.dzwillpower.R;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,6 +15,8 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
+
+import com.wits.dzwillpower.android.R;
 /**
  * 
  * @author wh1107007 董治

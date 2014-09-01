@@ -3,10 +3,10 @@ package com.wits.dzwillpower.common;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import com.wits.dzwillpower.R;
-
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.wits.dzwillpower.android.R;
 
 public class TestReturnXMl extends Activity {
 

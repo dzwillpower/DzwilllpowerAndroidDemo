@@ -14,9 +14,25 @@
     <string name="Ex_ListViewOncrollListenerI">Android 控件的使用/listview滚动监听</string>
     <string name="Ex_ListViewOnScrollListener">Android 控件的使用/listview滚动监听2</string>
     <string name="Ex_ListViewPagingLoading">Android 控件的使用/lsitview动态加载</string>
-    <string name="progressbar">Android 控件的使用/progressbar</string>
-    <string name="TestReturnXMl">Android 一般练习/测试返回的xml值</string>
-    <string name="AndroidPraticeActivity">Android 一般练习/listview 的使用</string>
+    <string name="TestReturnXMl">Android基础测试练习/测试返回的xml值</string>
+    <string name="AndroidPraticeActivity">Android基础测试练习/listview 的使用</string>
     <string name="TestHandler">Android Handler/Handler 更新UI</string>
-     <string name="TestHandler2">Android Handler/利用handler.post()更新UI</string>
+    <string name="TestHandler2">Android Handler/利用handler.post()更新UI</string>
+    <string name="testintent">Android基础测试练习/测试隐式的的intent</string>
+    <string name="temptest">Android基础测试练习/图片下载和获取屏幕密度</string>
+    <string name="asynctaskexample">Android异步任务/AsyncTaskExample</string>
+    <string name="handlertest">Android异步任务/Handler post 方法执行顺序</string>
+    <string name="listviewsample">Android 控件的使用/listviewsample</string>
+    <string name="seekbarsample">Android 控件的使用/seekbarsample</string>
+    <string name="reflectionimage">Android 自定义view/图片倒影</string>
+    <string name="sharedimagefetcherexample">图片异步加载</string>
+    <string name="onfocuschangeexample">Android基础测试练习/焦点切换</string>
+    <string name="testdemo">测试demo</string>
+     <string name="mergeadapterdemo">mergeadapterdemo</string>
+    <string name="filmviewtest">filmview 使用</string>
+    <string name="domparse">dom解析</string>
+    <string name="pullparse">pull解析</string>
+    <string name="saxparse">sax解析</string>
+    <string name="xmlparse">xml解析</string>
+
 </resources>

@@ -1,8 +1,6 @@
 package com.wits.dzwillpower.widget;
 import java.util.ArrayList;
 
-import com.wits.dzwillpower.R;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +10,8 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.wits.dzwillpower.android.R;
 /**
  * 转载自：http://www.cnblogs.com/noTice520/archive/2012/02/17/2355415.html
  * */

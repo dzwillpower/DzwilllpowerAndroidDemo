@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1300dp"
+    android:layout_height="108dp" >
+    <ImageView 
+        android:id="@+id/imgbg"
+        android:layout_marginTop="36dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/imgbg"/>
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="41dp"
+        android:id="@+id/imgplay"
+        android:background="@drawable/play"/>
+     <SeekBar
+        android:id="@+id/seekbarvideo"
+        android:layout_width="1000dp"
+        android:layout_height="108dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/imgplay"
+        android:max="100"
+        android:progress="50"
+        android:maxHeight="30dp"
+        android:minHeight="30dp"
+        android:secondaryProgress="75"
+        android:progressDrawable="@drawable/seek_bar_layerlist"
+        android:thumb="@drawable/null_thumb"
+        android:thumbOffset="0px" />
+    <TextView 
+        android:id="@+id/tvtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textColor="#d1923f"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:text="2：30：45"/>
+
+</RelativeLayout>

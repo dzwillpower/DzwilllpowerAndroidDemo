@@ -3,14 +3,12 @@ package com.wits.dzwillpower.common;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-import com.wits.dzwillpower.R;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Environment;
+
+import com.wits.dzwillpower.android.R;
 
 public class ActivityLifeStyle extends Activity{
 	@Override

@@ -1,7 +1,4 @@
 package com.wits.dzwillpower.animation;
-
-import com.wits.dzwillpower.R;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +11,8 @@ import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.wits.dzwillpower.android.R;
 
 public class Ex_Animation01 extends Activity {
 	/** Called when the activity is first created. */
@@ -78,15 +77,15 @@ public class Ex_Animation01 extends Activity {
 
 		@Override
 		public void onClick(View view) {
-			// ´´½¨Ò»¸öAnimationSet¶ÔÏó
+			// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½AnimationSetï¿½ï¿½ï¿½ï¿½
 			AnimationSet animationSet = new AnimationSet(true);
-			// ´´½¨Ò»¸öAlphaAnimation¶ÔÏó
+			// ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½AlphaAnimationï¿½ï¿½ï¿½ï¿½
 			AlphaAnimation alphaAnimation = new AlphaAnimation(1, 0);
-			// ÉèÖÃ¶¯»­Ö´ÐÐµÄÊ±¼ä£¨µ¥Î»£ººÁÃë£©
+			// ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½Ö´ï¿½Ðµï¿½Ê±ï¿½ä£¨ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ë£©
 			alphaAnimation.setDuration(1000);
-			// ½«AlphaAnimation¶ÔÏóÌí¼Óµ½AnimationSetµ±ÖÐ
+			// ï¿½ï¿½AlphaAnimationï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½AnimationSetï¿½ï¿½ï¿½ï¿½
 			animationSet.addAnimation(alphaAnimation);
-			// Ê¹ÓÃImageViewµÄstartAnimation·½·¨¿ªÊ¼Ö´ÐÐ¶¯»­
+			// Ê¹ï¿½ï¿½ImageViewï¿½ï¿½startAnimationï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼Ö´ï¿½Ð¶ï¿½ï¿½ï¿½
 			imageView.startAnimation(animationSet);
 		}
 	}

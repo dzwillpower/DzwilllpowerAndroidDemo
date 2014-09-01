@@ -1,7 +1,5 @@
 package com.wits.dzwillpower.animation;
 
-import com.wits.dzwillpower.R;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +8,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import com.wits.dzwillpower.android.R;
 
 public class Ex_Animation02 extends Activity {
 	/** Called when the activity is first created. */
@@ -63,7 +63,7 @@ public class Ex_Animation02 extends Activity {
 
 		@Override
 		public void onClick(View view) {
-			// Â¶èË?AnimationUtils?æÂ©•?ÑË??¢Á¶ª?ÖÁ?
+			// Â¶èÔøΩ?AnimationUtils?ÔøΩÂ©•?ÔøΩÔøΩ??ÔøΩÁ¶ª?ÔøΩÔøΩ?
 			Animation animation = AnimationUtils.loadAnimation(
 					Ex_Animation02.this, R.anim.alpha);
 			imageView.startAnimation(animation);

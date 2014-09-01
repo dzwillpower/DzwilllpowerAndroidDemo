@@ -18,7 +18,7 @@ import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.wits.dzwillpower.R;
+import com.wits.dzwillpower.android.R;
 
 public class Ex_checkboxActivity01 extends Activity {
 	Button show;
