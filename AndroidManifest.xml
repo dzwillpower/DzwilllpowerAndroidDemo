@@ -258,6 +258,14 @@
                 <category android:name="com.wits.dzwillpower.practice" />
             </intent-filter>
         </activity>
+          <activity android:name="com.wits.dzwillpower.ui.MultiThreadWriteImg"
+             android:label="@string/multithreadwriteimg">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
