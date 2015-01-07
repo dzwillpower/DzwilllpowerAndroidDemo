@@ -35,5 +35,6 @@
     <string name="pullparse">pull解析</string>
     <string name="saxparse">sax解析</string>
     <string name="xmlparse">xml解析</string>
+    <string name="gaussianblur">高斯模糊效果</string>
 
 </resources>
