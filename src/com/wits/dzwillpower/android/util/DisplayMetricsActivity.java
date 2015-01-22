@@ -13,7 +13,7 @@ import android.view.Display;
  * @author dongzhi
  * @Time 2013-5-27 下午05:14:57
  */
-public class DisplayMetrics extends Activity {
+public class DisplayMetricsActivity extends Activity {
 	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
