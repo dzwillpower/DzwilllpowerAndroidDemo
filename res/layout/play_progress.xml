@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/play_progress_margin_left"
+    android:layout_marginRight="@dimen/play_progress_margin_right" >
+
+    <!-- <TextView
+        android:id="@+id/seek_hint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/play_progress_seek_hint_text_margin_bottom"
+        android:gravity="center_horizontal"
+        android:text="00:00"
+        android:textColor="@color/play_progress_seek_hint_text_text_color"
+        android:textSize="@dimen/play_progress_totaltime_size"
+        android:visibility="invisible" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seek_hint_text"
+        android:maxHeight="@dimen/seekbar_max_height"
+        android:minHeight="@dimen/seekbar_min_height"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:thumb="@drawable/seekbar_thumb"
+        android:paddingLeft="-2.67dp"
+        android:paddingRight="-2.67dp"
+        android:thumbOffset="-1dp" />
+
+    <TextView
+        android:id="@+id/play_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/seek_bar"
+        android:layout_marginTop="@dimen/play_progress_play_time_margin_top"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="00:00"
+        android:textColor="@color/queue_position_color"
+        android:textSize="@dimen/play_progress_playtime_size"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/all_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/seek_bar"
+        android:layout_marginTop="@dimen/play_progress_play_time_margin_top"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="05:39"
+        android:textColor="@color/queue_position_color"
+        android:textSize="@dimen/play_progress_totaltime_size"
+        android:visibility="visible" /> -->
+        
+         <FrameLayout
+        android:id="@+id/seekbarwrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+<!-- android:thumbOffset="@dimen/seekbar_thumb_offset" /> -->
+<!-- android:progressDrawable="@drawable/seekbar_progress" -->

@@ -1,4 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- The default background of the menu. -->
+    <color name="queue_position_color">#ffffffff</color>
+    <color name="current_lyric_text_color">#E6ffffff</color>
+    <color name="lyric_shadow_color">#b3363636</color>
+    <color name="lyric_shadow_back_color">#000000</color>
+    <color name="lyric_text_color">#66ffffff</color>
+    <color name="ringtone_hint_color">#ffffff</color>
+    <color name="oppo_list_item_large_text_color">#404040</color>
+    <color name="select_playlist_layout_text1_text_color">#404040</color>
+    <color name="oppo_list_item_small_text_color">#919594</color>
+    <color name="oppo_list_head_large_text_color">#bdc5d2</color>
+    <color name="oppo_list_head_small_text_color">#515559</color>
     <color name="transparent">#00000000</color>
+    <!-- color name="listview_selector">#191919</color -->
+    <color name="listview_selector">#19000000</color>
+    <color name="default_progress_color">#ff20d2f8</color>
+    <color name="id3_title_color">#edf1f6</color>
+    <!-- For preference start -->
+    <!-- preference category layout -->
+    <color name="preference_category_summary_color">#5ad747</color>
+    <!-- preference layout -->
+    <!-- preference widget -->
+    <!-- For preference end -->
+
+    <!-- For Dialog start -->
+    <color name="alert_dialog_trxtview_text_color">#4f504d</color>
+    <color name="alert_dialog_edittrxt_text_color">#bbc0c0</color>
+    <!-- For Dialog start -->
+
+    <color name="hotlist_num_text_top">#d72424</color>
+    <color name="hotlist_num_text_second">#d77d24</color>
+    <color name="hotlist_num_text_third">#dbd07e</color>
+    <color name="holist_num_text_nornal">#b0b0b0</color>
+    <color name="listview_bg_color">#e6e6e6</color>
+    <!-- System Standard -->
+    <color name="actionbar_and_list_big_text_color">#343434</color>
+    <color name="actionbar_and_list_small_text_color">#b0b2b2</color>
+    <!-- System Standard -->
+
+    <color name="scan_progress_color">#323232</color>
+    <color name="scan_progress_text_grey_color">#7a7a7a</color>
+    <color name="filter_setting_file_size_text_color">#000000</color>
+    <color name="filter_setting_duration_text_color">#000000</color>
+    <color name="filter_setting_file_directory_filter_text_color">#000000</color>
+    <color name="filter_setting_segment_selected_text_color">#000000</color>
+    <color name="filter_setting_segment_unselected_text_color">#7a7a7a</color>
+
+    <!-- Service status bar -->
+    <color name="status_bar_bg_press_color">#161616</color>
+    <color name="status_bar_text_line_1_color">#ffffff</color>
+    <color name="status_bar_text_line_2_color">#8b8b8b</color>
+
+    <!-- Voice Search -->
+    <color name="white">#FFFFFF</color>
+    <!-- Main Tab -->
+    <color name="local_tab_title_color">#5d5d5d</color>
+    <color name="local_tab_list_color">#404040</color>
+    <!-- Mood play mode -->
+    <color name="mood_play_operation_text_color">#d8d8d8</color>
+    <color name="mood_play_tag_text_color">#414141</color>
+    <color name="mood_play_circle_text_color">#d8d8d8</color>
+    <color name="mood_play_list_line1_text_color">#ffffff</color>
+    <color name="mood_play_list_line2_text_color">#d8d8d8</color>
+
+    <!-- MV -->
+    <color name="mv_black_color">#000000</color>
+    <color name="mv_white_color">#FFFFFF</color>
+    <color name="mv_group_item_title_text_color">#000000</color>
+    <color name="mv_fragment_detail_color">#333333</color>
+    <color name="mv_list_title_first_color">#333333</color>
+    <color name="mv_list_title_second_color">#878b8a</color>
+    <color name="mv_download_normal_color">#919594</color>
+    <color name="mv_download_failed_color">#919594</color>
+    <color name="mv_download_running_color">#0b984b</color>
+    <color name="mv_download_title_color">#333333</color>
+    <color name="mv_download_artist_color">#8A8A8A</color>
+    <color name="mv_download_progress_color">#848484</color>
+    <color name="mv_download_status_color">#00925F</color>
+    <color name="mv_download_second_text_color">#676767</color>
+    <color name="oppo_pager_title_text_color">#ff333333</color>
+    <color name="oppo_pager_title_highligth_text_color">#ff0b984b</color>
+
+    <!-- Others -->
+    <color name="account_layout_account_name_text_color">#404040</color>
+    <color name="audition_play_audition_song_name_text_color">#4e4f4c</color>
+    <color name="oppo_popup_textColor">#2182ad</color>
+    <color name="album_artist_gridview_oppo_popup_text_color">#2182ad</color>
+    <color name="audition_play_time_text_color">#4e4f4c</color>
+    <color name="back_text_text_color">#404040</color>
+    <color name="collection_list_item_title_text_color">#404040</color>
+    <color name="collection_list_item_title_sec_text_color">#9d9d9d</color>
+    <color name="cue_listview_background">#d1d1d1</color>
+    <color name="edit_file_list_touch_search_bar_text_color">#2182ad</color>
+    <color name="id3_view_dlna_hint_text_color">#909090</color>
+    <color name="local_tab_list_item_item_title_text_color">#404040</color>
+    <color name="local_tab_list_item_item_title_sec_text_color">#9d9d9d</color>
+    <color name="music_control_bar_artist_name_text_color">#919594</color>
+    <color name="music_control_bar_song_name_text_color">#404040</color>
+    <color name="music_control_bar_shadow_bg_color">#19000000</color>
+    <color name="mv_bottom_control_duration_text_color">#F0F0F0</color>
+    <color name="online_list_item_common_play_mark_background">#f93f88</color>
+    <color name="online_radio_list_item_radio_name_text_color">#333333</color>
+    <color name="play_progress_seek_hint_text_text_color">#ffffffff</color>
+    <color name="record_name_text_color">#404040</color>
+    <color name="record_artist_text_color">#919594</color>
+    <color name="record_result_text_color">#7a7a7a</color>
+    <color name="record_start_or_cancel_text_color">#5d5d5d</color>
+    <color name="ringtone_clip_tv_track_text_color">#494949</color>
+    <color name="ringtone_clip_tv_filename_text_color">#000000</color>
+    <color name="scan_main_layout_textView_settings_scan_text_color">#333333</color>
+    <color name="scan_main_layout_scan_btn_text_color">#5d5d5d</color>
+    <color name="tab_files_clear_history_message_text_color">#5d5d5d</color>
+    <color name="tab_mark_touch_search_bar_text_color">#2182ad</color>
+    <color name="tab_songs_list_touch_search_bar_text_color">#2182ad</color>
+    <color name="track_list_item_common_play_mark_background_color">#f93f88</color>
+    <color name="create_playlist_playlist_text_color">#ff6f7880</color>
+    <color name="stop_playing_closetime_text_color">#000000</color>
+    <color name="stop_playing_min_time_text_color">#000000</color>
+    <color name="stop_playing_max_time_text_color">#000000</color>
+    <!-- xml: discovery_search_layout.xml -->
+    <color name="discovery_search_layout_tv_search_text_color">#919594</color>
+
+    <!-- xml: discovery_category_content_item -->
+    <!-- xml: discovery_hotword_title_layout -->
+    <color name="discovery_hotword_title_layout_tv_title_text_color">#303030</color>
+
+    <!-- xml: discovery_hotword_content_item -->
+    <color name="discovery_hotword_content_item_title_text_color">#303030</color>
+
+    <!-- xml: discovery_search_tab_fragment -->
+    <!-- xml: discovery_search_base_fragment -->
+    <color name="discovery_search_base_fragment_search_result_text_color_small">#7c7c7c</color>
+    <color name="discovery_search_base_fragment_search_result_text_color_big">#0b984b</color>
+
+    <!-- xml: discovery_search_history_layout -->
+    <color name="discovery_search_history_layout_tv_name_text_color">#404040</color>
+
+    <!-- xml: discovery_search_mv_item -->
+    <color name="discovery_search_mv_item_tv_line1_text_color">#333333</color>
+    <color name="discovery_search_mv_item_tv_line2_text_color">#878b8a</color>
+
+    <!-- xml: discovery_search_tab_history_listview_header -->
+    <color name="discovery_search_tab_history_listview_header_tv_text_color">#0b984b</color>
+
+    <!-- xml: online_artist_category_header_grid_item -->
+    <color name="online_artist_category_header_grid_item_title_shadow_color">#99909090</color>
+    <color name="online_artist_category_header_grid_item_title_text_color">#ffffff</color>
+
+    <!-- xml: download_all -->
+    <color name="shuffle_play">#0b984b</color>
+    <color name="download_all_item_count_text">#595959</color>
+
+    <!-- xml: listview_group_title_layout -->
+    <color name="title_text_color">#303030</color>
+
+    <!-- xml: online_para -->
+    <color name="parallax_content_back_color">#fafafa</color>
+
+    <!-- xml: parallax_top_back -->
+    <color name="parallax_title_text_color">#404040</color>
+
+    <!-- xml: public color -->
+    <color name="grid_item_first_text_color">#333333</color>
+    <color name="grid_item_second_text_color">#878b8a</color>
+
+    <!--java: LrcSearchResultChildFragment -->
+    <color name="lrc_search_text_color">#555555</color>
+    <color name="lrc_search_highlight_text_color">#f93f88</color>
+
+    <!-- xml: lrc_search_input_layout -->
+    <color name="lrc_search_input_layout_tv_songName_text_color">#292929</color>
+    <color name="lrc_search_input_layout_et_songName_text_color">#292929</color>
+    <color name="lrc_search_input_layout_tv_artistName_text_color">#292929</color>
+    <!-- xml: lrc_search_layout -->
+    <color name="lrc_search_layout_tv_hint_text_color">#a2a2a2</color>
+
+    <!-- xml: lrc_search_hint_layout -->
+    <color name="lrc_search_hint_layout_tv_resultCount_text_color">#545454</color>
+    <color name="lrc_search_hint_layout_tv_usePercent_text_color">#545454</color>
+
+    <!-- xml: lrc_search_result_chid_fragment -->
+    <color name="lrc_search_result_chid_fragment_tv_songName_text_color">#111111</color>
+    <color name="lrc_search_result_chid_fragment_tv_selected_text_select_color">#12000000</color>
+    <color name="lrc_search_result_chid_fragment_tv_selected_text_normal_color">#ff000000</color>
+
+    <!-- PlayinglistSongsAdapter  -->
+    <color name="playing_lsit_item_line1_color">#e6ffffff</color>
+    <color name="playing_lsit_item_line2_color">#66ffffff</color>
+    
+     <color name="default_screen_bg">#f9f9f9</color>
+    <color name="rounded_container_bg">#222222</color>
+    <color name="rounded_container_border">#3b3f44</color>
+    <color name="light_gray_header_color">#646663</color>
 </resources>

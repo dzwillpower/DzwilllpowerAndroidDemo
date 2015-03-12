@@ -275,6 +275,14 @@
                 <category android:name="com.wits.dzwillpower.practice" />
             </intent-filter>
         </activity>
+         <activity android:name="com.wits.dzwillpower.ui.SeekBarTest"
+             android:label="@string/seekbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
