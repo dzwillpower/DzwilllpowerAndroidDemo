@@ -4,8 +4,30 @@
     <item android:id="@android:id/background">
         <nine-patch android:src="@drawable/seekbar_bg" />
     </item>
+    
+    <item android:id="@android:id/progress"
+        android:right="10dp">
+        <scale
+            android:drawable="@drawable/seekbar_second_progress"
+            android:scaleWidth="100%" />
+    </item>
+    
     <item android:id="@android:id/secondaryProgress">
-        <clip>
+   
+         <scale
+            android:drawable="@drawable/seekbar_first_progress"
+            android:scaleWidth="100%" />
+    </item>
+
+</layer-list>
+<!--
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background">
+        <nine-patch android:src="@drawable/seekbar_bg" />
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <c>
             <nine-patch android:src="@drawable/seekbar_first_progress" />
         </clip>
     </item>
@@ -16,3 +38,4 @@
     </item>
 
 </layer-list>
+-->
