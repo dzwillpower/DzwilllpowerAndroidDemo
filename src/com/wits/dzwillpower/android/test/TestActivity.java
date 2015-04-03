@@ -58,6 +58,8 @@ public class TestActivity extends Activity {
         DisplayMetrics metrics = resources.getDisplayMetrics();
         MyLogger.dLog().d(""+metrics.densityDpi);
         MyLogger.dLog().d(""+metrics.density);
+        
+        
 
     }
 
