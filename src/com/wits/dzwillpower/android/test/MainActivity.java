@@ -12,6 +12,7 @@ import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.view.ViewPager;
 import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.View;
@@ -26,6 +27,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	private TextView mTextViewUser;
 	private ImageView imageView;
 	private Bitmap bitmap = null;
+	private ViewPager mViewPager;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +43,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			}
 		}.start();
 		getDisplayMetrics();
-		
+
 	}
 	@Override
 	public void onClick(View v) {
@@ -95,6 +97,6 @@ public class MainActivity extends Activity implements OnClickListener {
 		int heightPixels= dm.heightPixels;
 		MyLogger.dLog().e("width: " + width + " height: " + height+" density: "+density+" densityDpi: "+densityDpi);
 		MyLogger.dLog().e("widthPixels: "+widthPixels+" heightPixels: "+heightPixels);
-		
+
 	}
 }
