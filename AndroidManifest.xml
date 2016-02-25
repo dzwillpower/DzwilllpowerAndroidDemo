@@ -4,7 +4,7 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk android:minSdkVersion="12" />
+    <uses-sdk android:minSdkVersion="14" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -277,6 +277,14 @@
         </activity>
          <activity android:name="com.wits.dzwillpower.ui.SeekBarTest"
              android:label="@string/seekbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+           <activity android:name="com.wits.dzwillpower.android.view.CoordinateAndroid"
+             android:label="@string/androidcoordinate">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

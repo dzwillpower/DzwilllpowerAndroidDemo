@@ -1,6 +1,8 @@
 
 package com.wits.dzwillpower.android;
 
+import java.io.File;
+import java.io.IOException;
 import java.text.Collator;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -41,6 +43,15 @@ public class DzwilllpowerAndroidDemo extends ListActivity {
         try {
             divide();
         } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        File file = new File("/storage/emulated/0/Music/.oppo_cache/Album/依赖|张靓颖");
+        try {
+            boolean result = file.createNewFile();
+            Log.d("dzwillpower", "result: "+result);
+        } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
