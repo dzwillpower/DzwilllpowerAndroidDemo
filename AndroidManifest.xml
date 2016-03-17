@@ -130,7 +130,7 @@
                  <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-		</activity>
+		</activity>
         -->
         <activity
             android:name="com.wits.dzwillpower.android.content.IntentActivity01"
@@ -191,7 +191,7 @@
                 <category android:name="com.wits.dzwillpower.practice" />
             </intent-filter>
         </activity>
-        <activity 
+        <activity
             android:name="com.wits.dzwillpower.android.test.ReflectionImage"
             android:label="@string/reflectionimage" >
             <intent-filter>
@@ -209,82 +209,99 @@
                 <category android:name="com.wits.dzwillpower.practice" />
             </intent-filter>
         </activity>
-        <activity android:name ="com.wits.dzwillpower.android.test.SharedImageFetcherExample"
-            android:label="@string/sharedimagefetcherexample">
-             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.wits.dzwillpower.practice" />
-            </intent-filter>
-            
-        </activity>
-         <activity android:name ="com.wits.dzwillpower.android.view.OnFocusChangeExample"
-            android:label="@string/onfocuschangeexample">
-             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.wits.dzwillpower.practice" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.wits.dzwillpower.android.test.TestActivity" 
-            android:label="@string/testdemo">
+        <activity
+            android:name="com.wits.dzwillpower.android.test.SharedImageFetcherExample"
+            android:label="@string/sharedimagefetcherexample" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.wits.dzwillpower.practice" />
             </intent-filter>
         </activity>
-        <activity android:name="com.wits.dzwillpower.android.test.FilmViewActivity"
-            android:label="@string/filmviewtest">
-             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.wits.dzwillpower.practice" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.wits.dzwillpower.android.xmlparse.DomXmlParseActivity"
-             android:label="@string/xmlparse">
+        <activity
+            android:name="com.wits.dzwillpower.android.view.OnFocusChangeExample"
+            android:label="@string/onfocuschangeexample" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.wits.dzwillpower.practice" />
             </intent-filter>
         </activity>
-        <activity android:name="com.wits.dzwillpower.android.test.MergeAdapterDemo"
-             android:label="@string/mergeadapterdemo">
+        <activity
+            android:name="com.wits.dzwillpower.android.test.TestActivity"
+            android:label="@string/testdemo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.wits.dzwillpower.practice" />
             </intent-filter>
         </activity>
-          <activity android:name="com.wits.dzwillpower.ui.MultiThreadWriteImg"
-             android:label="@string/multithreadwriteimg">
+        <activity
+            android:name="com.wits.dzwillpower.android.test.FilmViewActivity"
+            android:label="@string/filmviewtest" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.wits.dzwillpower.practice" />
             </intent-filter>
         </activity>
-        
-          <activity android:name="com.wits.dzwillpower.ui.GaussianBlurExample"
-             android:label="@string/gaussianblur">
+        <activity
+            android:name="com.wits.dzwillpower.android.xmlparse.DomXmlParseActivity"
+            android:label="@string/xmlparse" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.wits.dzwillpower.practice" />
             </intent-filter>
         </activity>
-         <activity android:name="com.wits.dzwillpower.ui.SeekBarTest"
-             android:label="@string/seekbar">
+        <activity
+            android:name="com.wits.dzwillpower.android.test.MergeAdapterDemo"
+            android:label="@string/mergeadapterdemo" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="com.wits.dzwillpower.practice" />
             </intent-filter>
         </activity>
-           <activity android:name="com.wits.dzwillpower.android.view.CoordinateAndroid"
-             android:label="@string/androidcoordinate">
+        <activity
+            android:name="com.wits.dzwillpower.ui.MultiThreadWriteImg"
+            android:label="@string/multithreadwriteimg" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.ui.GaussianBlurExample"
+            android:label="@string/gaussianblur" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.ui.SeekBarTest"
+            android:label="@string/seekbar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.android.view.CoordinateAndroid"
+            android:label="@string/androidcoordinate" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wits.dzwillpower.ui.GetTranslationXDemo"
+            android:label="@string/gettranslationx" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

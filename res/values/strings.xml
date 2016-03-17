@@ -38,5 +38,6 @@
     <string name="gaussianblur">高斯模糊效果</string>
     <string name="seekbar">seekbar 测试</string>
     <string name="androidcoordinate">android 坐标系</string>
+    <string name="gettranslationx">getTranslationX 验证</string>
 
 </resources>
