@@ -35,7 +35,6 @@ public class CoordinateAndroid extends Activity {
     protected void onResume() {
         super.onResume();
         MyLog.d(TAG,"onResume");
-
         // View布局区域宽高等尺寸获取
         Rect windownRect = new Rect();
         getWindow().findViewById(Window.ID_ANDROID_CONTENT).getDrawingRect(windownRect);
@@ -82,9 +81,8 @@ public class CoordinateAndroid extends Activity {
      */
     public static int getBottomStatusHeight(Context context) {
         int totalHeight = getDpi(context);
-
         int contentHeight = getScreenHeight(context);
-        MyLog.d(TAG,"virtualheight: " + (totalHeight - contentHeight));
+        MyLog.d(TAG,"virtualkeyheight: " + (totalHeight - contentHeight));
         return totalHeight - contentHeight;
     }
 
@@ -139,9 +137,10 @@ public class CoordinateAndroid extends Activity {
         getDpi(this);
         // 获取屏幕区域的宽高等尺寸获取
         getScreenWidth();
+        //获取虚拟按键的高度
         getBottomStatusHeight(this);
         //这个标题栏的高度是包含了 状态栏的高度
-        MyLog.d(TAG,"biaotilanheight: "+getTitleHeight(this));
+        MyLog.d(TAG,"titlebarheight: "+getTitleHeight(this));
 
         Rect rect= new Rect();
         getWindow().getDecorView().getWindowVisibleDisplayFrame(rect);
