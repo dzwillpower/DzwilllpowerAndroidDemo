@@ -50,14 +50,14 @@ import android.util.TypedValue;
 import android.widget.ImageView;
 
 /**
- * 
+ *
  * @author dzwillpower
  * @2013-5-20下午10:07:07
  */
 public class Tools {
 	/**
 	 * 精确获取屏幕尺寸 如：3.5 4.0
-	 * 
+	 *
 	 * @param ctx
 	 * @return
 	 */
@@ -71,7 +71,7 @@ public class Tools {
 
 	/**
 	 * 判断是否是平板 官方做法
-	 * 
+	 *
 	 * @param context
 	 * @return
 	 */
@@ -81,7 +81,7 @@ public class Tools {
 
 	/**
 	 * 启动apk的默认activity
-	 * 
+	 *
 	 * @param ctx
 	 * @param packageName
 	 */
@@ -109,7 +109,7 @@ public class Tools {
 
 	/**
 	 * 计算字宽 注意如果设置了textStyle，还需要进一步设置TextPaint。
-	 * 
+	 *
 	 * @param text
 	 * @param Size
 	 * @return
@@ -122,7 +122,7 @@ public class Tools {
 
 	/**
 	 * 获取应用程序下所有的activity
-	 * 
+	 *
 	 * @param ctx
 	 * @return
 	 */
@@ -139,7 +139,7 @@ public class Tools {
 
 	/**
 	 * 检查字符串是否包含汉字
-	 * 
+	 *
 	 * @param sequence
 	 * @return
 	 */
@@ -154,7 +154,7 @@ public class Tools {
 
 	/**
 	 * 检测字符串中只能包含：中文、数字、下划线(_)、横线(-)
-	 * 
+	 *
 	 * @param sequence
 	 * @return
 	 */
@@ -167,7 +167,7 @@ public class Tools {
 
 	/**
 	 * 检查有没有应用程序接受处理你发出的intent
-	 * 
+	 *
 	 * @param context
 	 * @param action
 	 * @return
@@ -182,7 +182,7 @@ public class Tools {
 
 	/**
 	 * 使用TransitionDrawable实现渐变效果
-	 * 
+	 *
 	 * @param imageView
 	 * @param bitmap
 	 */
@@ -200,7 +200,7 @@ public class Tools {
 
 	/**
 	 * dip 转px
-	 * 
+	 *
 	 * @param ctx
 	 * @param dip
 	 * @return
@@ -212,7 +212,7 @@ public class Tools {
 
 	/**
 	 * 多进程Preferences数据共享
-	 * 
+	 *
 	 * @param ctx
 	 * @param key
 	 * @param value
@@ -234,7 +234,7 @@ public class Tools {
 
 	/**
 	 * 将字节数组转化为16进制字符串
-	 * 
+	 *
 	 * @param bytes
 	 * @return
 	 */
@@ -253,7 +253,7 @@ public class Tools {
 
 	/**
 	 * 16进制的字符串表示转成字节数组
-	 * 
+	 *
 	 * @param hexString
 	 *            16进制格式的字符串
 	 * @return 转换后的字节数组
@@ -277,7 +277,7 @@ public class Tools {
 
 	/**
 	 * 获取WIFI的IP地址
-	 * 
+	 *
 	 * @param context
 	 * @return
 	 */
@@ -292,7 +292,7 @@ public class Tools {
 
 	/**
 	 * 将LONG长整型转成String
-	 * 
+	 *
 	 * @param longIp
 	 * @return
 	 */
@@ -312,7 +312,7 @@ public class Tools {
 
 	/**
 	 * 返回当前的时间
-	 * 
+	 *
 	 * @return
 	 */
 	public static String returnCurrentTime() {
@@ -325,7 +325,7 @@ public class Tools {
 
 	/**
 	 * 判断是否有中文
-	 * 
+	 *
 	 * @param chineseStr
 	 * @return
 	 */
@@ -341,7 +341,7 @@ public class Tools {
 
 	/**
 	 * 读取指定的字节数
-	 * 
+	 *
 	 * @param is
 	 * @param size
 	 * @return
@@ -372,7 +372,7 @@ public class Tools {
 
 	/**
 	 * 返回文件大小，并取合适的单位
-	 * 
+	 *
 	 * @param f
 	 * @return
 	 */
@@ -382,7 +382,7 @@ public class Tools {
 
 	/**
 	 * 返回文件大小
-	 * 
+	 *
 	 * @param f
 	 * @return
 	 */
@@ -406,7 +406,7 @@ public class Tools {
 
 	/**
 	 * 获得值 合适的单位
-	 * 
+	 *
 	 * @param filesize
 	 * @return
 	 */
@@ -428,7 +428,7 @@ public class Tools {
 
 	/**
 	 * 获取字符串长度
-	 * 
+	 *
 	 * @param value
 	 * @return
 	 */
@@ -454,7 +454,7 @@ public class Tools {
 
 	/**
 	 * 复制文件
-	 * 
+	 *
 	 * @param fromFile
 	 * @param isWrite
 	 * @param context
@@ -557,7 +557,7 @@ public class Tools {
 //
 //        mNotificationManager.notify(requestCode, mNotification);
 //    }
-	
+
 	/** ip转16进制 */
     public static String ipToHex(String ips) {
         StringBuffer result = new StringBuffer();
@@ -586,7 +586,6 @@ public class Tools {
             }
             return result.toString();
         } catch (NumberFormatException ex) {
-            MyLogger.dLog().e(ex);
         }
         return "";
     }
@@ -652,7 +651,7 @@ public class Tools {
 
     /**
      * 解压一个压缩文档 到指定位置
-     * 
+     *
      * @param zipFileString 压缩包的名字
      * @param outPathString 指定的路径
      * @throws Exception
@@ -693,7 +692,7 @@ public class Tools {
         inZip.close();
 
     }//end of func
-    
+
     /** 从assets 文件夹中读取文本数据 */
     public static String getTextFromAssets(final Context context, String fileName) {
         String result = "";
@@ -712,7 +711,7 @@ public class Tools {
         }
         return result;
     }
-    
+
     /** 从assets 文件夹中读取图片 */
     public static Drawable loadImageFromAsserts(final Context ctx, String fileName) {
         try {

@@ -1,7 +1,7 @@
 
 package com.wits.dzwillpower.android.util;
 
-import com.wits.dzwillpower.android.utilites.MyLogger;
+import com.wits.dzwillpower.android.utilites.MyLog;
 
 import android.content.Context;
 import android.content.res.Resources;

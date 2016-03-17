@@ -21,9 +21,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.wits.dzwillpower.android.R;
-import com.wits.dzwillpower.android.utilites.MyLogger;
+import com.wits.dzwillpower.android.utilites.MyLog;
 
 public class MainActivity extends Activity implements OnClickListener {
+    private static final String TAG = MainActivity.class.getSimpleName();
 	private TextView mTextViewUser;
 	private ImageView imageView;
 	private Bitmap bitmap = null;
@@ -95,8 +96,8 @@ public class MainActivity extends Activity implements OnClickListener {
 		float densityDpi = dm.densityDpi;// 屏幕密度DPI（120 / 160 / 240）240
 		int widthPixels= dm.widthPixels;
 		int heightPixels= dm.heightPixels;
-		MyLogger.dLog().e("width: " + width + " height: " + height+" density: "+density+" densityDpi: "+densityDpi);
-		MyLogger.dLog().e("widthPixels: "+widthPixels+" heightPixels: "+heightPixels);
+		MyLog.e(TAG,"width: " + width + " height: " + height+" density: "+density+" densityDpi: "+densityDpi);
+		MyLog.e(TAG,"widthPixels: "+widthPixels+" heightPixels: "+heightPixels);
 
 	}
 }

@@ -17,10 +17,10 @@ import android.widget.TextView;
 
 import com.wits.dzwillpower.android.R;
 import com.wits.dzwillpower.android.customview.RotateTextImageView;
-import com.wits.dzwillpower.android.utilites.MyLogger;
+import com.wits.dzwillpower.android.utilites.MyLog;
 
 public class TestActivity extends Activity {
-
+    private static final String TAG = TestActivity.class.getSimpleName();
     RelativeLayout relativeLayout;
     private TextView textView;
 
@@ -56,10 +56,10 @@ public class TestActivity extends Activity {
 
         Resources resources = this.getResources();
         DisplayMetrics metrics = resources.getDisplayMetrics();
-        MyLogger.dLog().d(""+metrics.densityDpi);
-        MyLogger.dLog().d(""+metrics.density);
-        
-        
+        MyLog.d(TAG,""+metrics.densityDpi);
+        MyLog.d(TAG,""+metrics.density);
+
+
 
     }
 

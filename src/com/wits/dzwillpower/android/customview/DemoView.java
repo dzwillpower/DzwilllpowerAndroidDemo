@@ -7,11 +7,13 @@ import android.graphics.DashPathEffect;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Rect;
+import android.support.v4.view.animation.FastOutLinearInInterpolator;
 import android.view.View;
 
-import com.wits.dzwillpower.android.utilites.MyLogger;
+import com.wits.dzwillpower.android.utilites.MyLog;
 
 public class DemoView extends View{
+    private static final String TAG = DemoView.class.getSimpleName();
 	public DemoView(Context context){
 		super(context);
 	}
@@ -109,8 +111,8 @@ public class DemoView extends View{
 		canvas.translate(-x, -y);
 
 		// rotate the canvas on center of the text to draw
-		MyLogger.dLog().e("rect.exactCenterX(): "+rect.exactCenterX()); 
-		MyLogger.dLog().e("rect.exactCenterY(): "+rect.exactCenterY()); 
+		MyLog.e(TAG,"rect.exactCenterX(): "+rect.exactCenterX());
+		MyLog.e(TAG,"rect.exactCenterY(): "+rect.exactCenterY());
 		canvas.rotate(-45, x + rect.exactCenterX(),
                                            y + rect.exactCenterY());
 		// draw the rotated text

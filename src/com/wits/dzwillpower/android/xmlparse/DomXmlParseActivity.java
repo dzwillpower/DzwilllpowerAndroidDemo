@@ -22,7 +22,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 import com.wits.dzwillpower.android.R;
-import com.wits.dzwillpower.android.utilites.MyLogger;
+import com.wits.dzwillpower.android.utilites.MyLog;
 
 public class DomXmlParseActivity extends Activity {
 
@@ -49,7 +49,6 @@ public class DomXmlParseActivity extends Activity {
 			try {
 				List<Book> list = getBooks(inputstream);
 				for (Book book : list) {
-					MyLogger.dLog().d("DomXmlParse book.toString(): " + book.toString());
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -68,7 +67,6 @@ public class DomXmlParseActivity extends Activity {
 				List<Book> listBooks = PullParser.getBooks(inputstream, "UTF-8");
 				System.out.println(listBooks.size());
 				for (Book book : listBooks) {
-					MyLogger.dLog().d("PullParse book.tostring():"+book.toString());
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -85,7 +83,6 @@ public class DomXmlParseActivity extends Activity {
 			try {
 				List<HashMap<String, String>> list = SaxService.readXML(inputstream, "book");
 				for (HashMap<String, String> map : list) {
-					MyLogger.dLog().d("SaxParse map.toString(): " + map.toString());
 				}
 
 			} catch (Exception e) {

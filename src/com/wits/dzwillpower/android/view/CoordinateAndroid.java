@@ -3,11 +3,13 @@ package com.wits.dzwillpower.android.view;
 
 import java.lang.reflect.Method;
 
-import com.wits.dzwillpower.android.utilites.MyLogger;
+import com.wits.dzwillpower.android.utilites.MyLog;
 
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Rect;
+import android.nfc.Tag;
+import android.nfc.tech.TagTechnology;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Display;
@@ -22,6 +24,7 @@ import android.view.WindowManager.LayoutParams;
  *         2016年1月8日
  */
 public class CoordinateAndroid extends Activity {
+    private static final String TAG = CoordinateAndroid.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +34,7 @@ public class CoordinateAndroid extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        MyLogger.dLog().d("onResume");
+        MyLog.d(TAG,"onResume");
 
         // View布局区域宽高等尺寸获取
         Rect windownRect = new Rect();
@@ -44,7 +47,7 @@ public class CoordinateAndroid extends Activity {
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
         int widthPixels = metrics.widthPixels;
         int heightPixels = metrics.heightPixels;
-        MyLogger.dLog().d("widthPixels: " + widthPixels + " heightPixels: " + heightPixels);
+        MyLog.d(TAG,"widthPixels: " + widthPixels + " heightPixels: " + heightPixels);
     }
 
     // 获取屏幕原始尺寸高度，包括虚拟功能键高度
@@ -63,7 +66,7 @@ public class CoordinateAndroid extends Activity {
             method.invoke(display, displayMetrics);
             width = displayMetrics.heightPixels;
             height = displayMetrics.widthPixels;
-            MyLogger.dLog().d("width: " + width + " height: " + height);
+            MyLog.d(TAG,"width: " + width + " height: " + height);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -81,7 +84,7 @@ public class CoordinateAndroid extends Activity {
         int totalHeight = getDpi(context);
 
         int contentHeight = getScreenHeight(context);
-        MyLogger.dLog().d("virtualheight: " + (totalHeight - contentHeight));
+        MyLog.d(TAG,"virtualheight: " + (totalHeight - contentHeight));
         return totalHeight - contentHeight;
     }
 
@@ -124,7 +127,7 @@ public class CoordinateAndroid extends Activity {
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         DisplayMetrics outMetrics = new DisplayMetrics();
         wm.getDefaultDisplay().getMetrics(outMetrics);
-        MyLogger.dLog().d("scrrenheight: " + outMetrics.heightPixels);
+        MyLog.d(TAG,"scrrenheight: " + outMetrics.heightPixels);
         return outMetrics.heightPixels;
     }
 
@@ -132,18 +135,18 @@ public class CoordinateAndroid extends Activity {
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        MyLogger.dLog().d("onWindowFocusChanged");
+        MyLog.d(TAG,"onWindowFocusChanged");
         getDpi(this);
         // 获取屏幕区域的宽高等尺寸获取
         getScreenWidth();
         getBottomStatusHeight(this);
         //这个标题栏的高度是包含了 状态栏的高度
-        MyLogger.dLog().d("biaotilanheight: "+getTitleHeight(this));
+        MyLog.d(TAG,"biaotilanheight: "+getTitleHeight(this));
 
         Rect rect= new Rect();
         getWindow().getDecorView().getWindowVisibleDisplayFrame(rect);
         int statusBarHeight = rect.top;
-        MyLogger.dLog().d("statusBarHeight: "+statusBarHeight);
+        MyLog.d(TAG,"statusBarHeight: "+statusBarHeight);
     }
 
 }

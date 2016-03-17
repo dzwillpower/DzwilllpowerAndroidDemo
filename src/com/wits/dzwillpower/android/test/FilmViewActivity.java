@@ -19,14 +19,15 @@ import com.wits.dzwillpower.android.R;
 import com.wits.dzwillpower.android.adapter.FilmViewPageAdapter;
 import com.wits.dzwillpower.android.customview.FilmView;
 import com.wits.dzwillpower.android.util.FilmViewBean;
-import com.wits.dzwillpower.android.utilites.MyLogger;
+import com.wits.dzwillpower.android.utilites.MyLog;
 
 /**
- * 
+ *
  * @author dzwillpower
  * @time 2013年10月18日 下午2:26:36
  */
 public class FilmViewActivity extends Activity {
+    private static final String TAG = FilmViewActivity.class.getSimpleName();
 	private List<FilmViewBean> listFilmBeans;
 	private VerticalViewPager2 verticalViewPager2;
 	ViewFrameIndicator indicator;
@@ -73,16 +74,16 @@ public class FilmViewActivity extends Activity {
 			public void onGlobalFocusChanged(View oldFocus, View newFocus) {
 
 				if (oldFocus != null) {
-					MyLogger.dLog().e("old :" + oldFocus.getClass().getName());
+					MyLog.e(TAG,"old :" + oldFocus.getClass().getName());
 					if (oldFocus instanceof FilmView) {
 						FilmView view = (FilmView) oldFocus;
 						view.smalll(true);
 					}
 				}
 				if (newFocus != null) {
-					MyLogger.dLog().e("new :" + newFocus.getClass().getName());
+					MyLog.e(TAG,"new :" + newFocus.getClass().getName());
 					if (newFocus instanceof FilmView) {
-						MyLogger.dLog().e(newFocus.getTag() + "");
+						MyLog.e(TAG,newFocus.getTag() + "");
 						final FilmView view = (FilmView) newFocus;
 						view.large(true);
 //						indicator.moveFrameTo(view.getImageView(), true, false, 0, 200, 2, 0);

@@ -1,7 +1,7 @@
 package com.wits.dzwillpower.android.view;
 
 import com.wits.dzwillpower.android.R;
-import com.wits.dzwillpower.android.utilites.MyLogger;
+import com.wits.dzwillpower.android.utilites.MyLog;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import android.widget.Button;
  */
 public class OnFocusChangeExample extends Activity implements OnFocusChangeListener {
 	private Button button1, button2, button3;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -30,19 +30,15 @@ public class OnFocusChangeExample extends Activity implements OnFocusChangeListe
 
 	@Override
 	public void onFocusChange(View v, boolean hasFocus) {
-		MyLogger.dLog().e("enter onFocusChange");
 		switch (v.getId()) {
 		case R.id.btn_first:
 			if(hasFocus)
-				MyLogger.dLog().i("button1 foucus change");
 			break;
 		case R.id.btn_second:
 			if(hasFocus)
-				MyLogger.dLog().i("button2 focus change");
 			break;
 		case R.id.btn_three:
-			if (hasFocus) 
-				MyLogger.dLog().i("button3 focus change");
+			if (hasFocus)
 			break;
 
 		default:
