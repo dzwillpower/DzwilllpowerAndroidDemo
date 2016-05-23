@@ -39,5 +39,6 @@
     <string name="seekbar">seekbar 测试</string>
     <string name="androidcoordinate">android 坐标系</string>
     <string name="gettranslationx">getTranslationX 验证</string>
+    <string name="textviewdefaultpadding">TextView 默认padding测试</string>
 
 </resources>

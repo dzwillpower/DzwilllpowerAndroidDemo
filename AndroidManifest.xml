@@ -15,6 +15,7 @@
         android:label="@string/app_name" >
         <activity
             android:name="com.wits.dzwillpower.android.DzwilllpowerAndroidDemo"
+            android:launchMode="singleTask"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -308,6 +309,16 @@
                 <category android:name="com.wits.dzwillpower.practice" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.wits.dzwillpower.ui.TextViewDefaultPadding"
+            android:label="@string/textviewdefaultpadding" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+        
     </application>
 
 </manifest>
