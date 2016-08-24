@@ -318,6 +318,32 @@
                 <category android:name="com.wits.dzwillpower.practice" />
             </intent-filter>
         </activity>
+         <activity
+            android:name="com.wits.dzwillpower.ui.TestActivity"
+            android:label="@string/testall" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="com.wits.dzwillpower.ui.SecondActivity"
+            android:launchMode="singleTop" >
+           <!--  <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter> -->
+        </activity>
+         <activity
+            android:name="com.wits.dzwillpower.ui.ThirdActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.wits.dzwillpower.practice" />
+            </intent-filter>
+        </activity>
         
     </application>
 
